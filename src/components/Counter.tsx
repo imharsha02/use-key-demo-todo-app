@@ -45,9 +45,10 @@
     return () => {clearInterval(intervalId)}
 },[count])
 return (
-  <>
-    <h1 className='text-xl p-10'>Count: {count}</h1>
-  </>
+  <div className='max-w-max mt-10 rounded-md mx-auto border-2 border-gray-200 p-10'>
+    <h1 className="scroll-m-20 mx-auto text-center text-3xl font-semibold tracking-tight first:mt-0">useFreshRef demo</h1>
+    <p className='leading-7 [&:not(:first-child)]:mt-6 text-2xl text-center'>The count is: {count}</p>
+  </div>
 )
 }
 
